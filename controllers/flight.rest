@@ -1,0 +1,22 @@
+@url = "http://localhost:3000/"
+
+GET http://localhost:3000/flight HTTP/1.1
+
+###
+GET http://localhost:3000/flight/4511b57c-0a4c-4b71-85ec-39495a640494 HTTP/1.1
+###
+POST http://localhost:3000/flight HTTP/1.1 Content-Type: application/json
+
+{
+"name": "Abdul", "email": "ibn@example.com", "title": "flight to Milan", "price": 1000,
+}
+
+###
+PUT http://localhost:3000/flight/ HTTP/1.1 Content-Type: application/json
+
+{
+"name": "Ibn", "email": "abu@example.com", "title": "flight to Abu Dahbi", "price": 2000,
+}
+
+###
+DELETE http://localhost:3000/flight/4511b57c-0a4c-4b71-85ec-39495a640494 HTTP/1.1
